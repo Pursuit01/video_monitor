@@ -9,6 +9,11 @@ import ElementPlus from 'unplugin-element-plus/vite'
 
 export default defineConfig(() => {
   return {
+    server: {
+      hmr: {
+        overlay: false
+      }
+    },
     plugins: [
       vue(),
       ElementPlus({
@@ -41,7 +46,8 @@ export default defineConfig(() => {
       preprocessorOptions: {
         less: {},
         scss: {
-          additionalData: `@use "@/style/modules/index.scss";`
+          // 自定义element-plus样式文件
+          // additionalData: `@use "@/style/modules/index.scss";` 
         }
       },
     },

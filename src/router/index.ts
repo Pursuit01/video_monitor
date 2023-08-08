@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import type { RouteRecordRaw } from "vue-router";
-import { defaultRoute } from "./default";
+import { defaultRoute, mainRoute } from "./default";
 import NProgress from "nprogress";
 
-const routes: RouteRecordRaw[] = [...defaultRoute];
+const routes: RouteRecordRaw[] = [...defaultRoute, ...mainRoute];
 const router = createRouter({
   history: createWebHistory(),
   routes,

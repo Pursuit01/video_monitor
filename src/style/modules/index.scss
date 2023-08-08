@@ -1,8 +1,10 @@
-@forward 'element-plus/theme-chalk/src/common/var.scss' with (
-  $colors: (
-    'primary': (
-      'base': green,
-    ),
-  ),
-);
-
+// @forward 'element-plus/theme-chalk/src/common/var.scss' with (
+//   $colors: (
+//     'primary': (
+//       'base': green,
+//     ),
+//   ),
+// );
+@import 'global.less';
+@import 'component.less';
+@import 'elreset.less';
