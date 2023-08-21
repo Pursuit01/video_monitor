@@ -8,7 +8,7 @@ const stores: ImportMetaGlob = import.meta.glob(["@/store/modules/*.ts"], {
   eager: true,
 });
 
-console.log("stores", stores);
+// console.log("stores", stores);
 
 export const registerStore = (pinia: Pinia) => {
   // const globalStore = useGlobalStore();

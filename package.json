@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
     "animate.css": "^4.1.1",
     "axios": "^1.4.0",
     "dayjs": "^1.11.9",
@@ -26,6 +27,7 @@
     "zr-component": "git+http://192.168.1.162:8070/develops/zr-component.git"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "mockjs": "^1.1.0",
     "typescript": "^5.0.2",

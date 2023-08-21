@@ -5,7 +5,7 @@ import NProgress from "nprogress";
 
 const routes: RouteRecordRaw[] = [...defaultRoute, ...mainRoute];
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/video-monitor"),
   routes,
 });
 

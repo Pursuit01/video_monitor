@@ -1,8 +1,13 @@
 <script setup lang="ts">
+const config = reactive({
+  max: 3,
+});
 </script>
 
 <template>
-  <router-view></router-view>
+  <el-config-provider :message="config">
+    <router-view></router-view>
+  </el-config-provider>
 </template>
 
 <style>

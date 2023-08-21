@@ -26,7 +26,6 @@ import "virtual:svg-icons-register";
 import registGlobalCom from "./components/registGlobalCom";
 
 async function bootstrap() {
-  
   const app = createApp(App);
 
   // 使用pinia

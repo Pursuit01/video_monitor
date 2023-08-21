@@ -13,20 +13,27 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "types": ["element-plus/global"],
+    "allowJs": true,
+    "types": [],
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "/@/*": ["./src/*"],
       "/#/*": ["./types/*"],
       "@/*": ["./src/*"],
       "#/*": ["./types/*"]
-    },
-    
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "**.d.ts", "src/**/**/*.vue"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "**.d.ts",
+    "src/**/**/*.vue"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
